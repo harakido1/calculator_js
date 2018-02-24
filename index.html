@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>calculator_js</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="style.css"> <!-- Link to css page -->
+	
+    <title>calculator_js</title>
+  </head>
+<body>
+  <h2>JavaScript Calculator</h2>
+  <div id="calculator">
+    <form>
+      <input type='text' id='display' disabled>
+      <br/>
+      <input type='button' value='C' id='keys' onclick='toDisplay("c")'>
+      <input type='button' value='CE' id='keys' onclick='backspace()'>
+      <input type='button' value='X%' id='keys' onclick='percent()'>
+      <input type='button' value='/' id='keys' onclick='toDisplay("/")'>
+      <br/>
+      <input type='button' value='7' id='keys' onclick='toDisplay("7")'>
+      <input type='button' value='8' id='keys' onclick='toDisplay("8")'>
+      <input type='button' value='9' id='keys' onclick='toDisplay("9")'>
+      <input type='button' value='*' id='keys' onclick='toDisplay("*")'>
+      <br/>
+      <input type='button' value='4' id='keys' onclick='toDisplay("4")'>
+      <input type='button' value='5' id='keys' onclick='toDisplay("5")'>
+      <input type='button' value='6' id='keys' onclick='toDisplay("6")'>
+      <input type='button' value='-' id='keys' onclick='toDisplay("-")'>
+      <br/>
+      <input type='button' value='1' id='keys' onclick='toDisplay("1")'>
+      <input type='button' value='2' id='keys' onclick='toDisplay("2")'>
+      <input type='button' value='3' id='keys' onclick='toDisplay("3")'>
+      <input type='button' value='+' id='keys' onclick='toDisplay("+")'>
+      <br/>
+      <input type='button' value='.' id='keys' onclick='toDisplay(".")'>
+      <input type='button' value='0' id='keys' onclick='toDisplay("0")'>
+      <input type='button' value='=' id='equals' onclick='answer()'>
+    </form>
+    <h5>Developer: John Pageler</h5>
+  </div>
+  
+  <!-- 
+	<div class="container">
+	  <footer>
+		<p>I would like to thank the following resources for providing the free knowledge and information throughout this learning pursuit toward my goal of "Front End Certification," without which this path would be untraversable: FreeCodeCamp , mozilla MDN WEB DOCS, w3schools.com, stackoverflow.com, jquery.com, bootstrap.com. YouTube References:  FreeCodeCamp Instructors, Kudvenkat at PragimTech, CodingTutorials360, Mark Snow, Root Tech. "Visual Studio Code" YouTube References: Chris Johnson, LevelUpTuts. "GitHub" YouTube References: FreeCodeCamp Instructors, thenewboston. "Formspree.io" YouTube Reference: Prateep Gedupudi.</p>
+	  </footer>
+	</div> -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="script.js"></script> <!-- Link to css page -->
+  </body>
+</html>
